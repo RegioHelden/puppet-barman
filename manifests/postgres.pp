@@ -301,7 +301,7 @@ class barman::postgres (
 
   # Configure PostgreSQL server for archive mode
   postgresql::server::config_entry {
-    'archive_mode': value => 'on';
+    'archive_mode': value => 'always';
     'wal_level': value => $wal_level;
   }
 
